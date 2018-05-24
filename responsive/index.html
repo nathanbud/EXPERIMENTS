@@ -7,13 +7,14 @@
 		margin:0;
 		box-sizing: border-box;
 	}
-		.container{
+		#container-whole{
 			width:100vw;
 			height:100vh;
 			background: #141414;
+			
 		}
 
-			.container #header{
+			#container-whole #header{
 			width:80vw;
 			height:40vh;
 			background: #efefef;
@@ -22,7 +23,7 @@
 			top:5%;
 			transform: translate(-50%, -5%);
 		}
-			.container .content{
+		#container-whole .content{
 			width:80vw;
 			height:40vh;
 			background: #234567;
@@ -30,22 +31,56 @@
 			left:50%;
 			bottom:5%;
 			transform: translate(-50%, -5%);
+			overflow:auto;	
+		}
+		.article1 {
+			
 		}
 		article p{
 			font-size: calc(18px + 0.5vw); 
+			 line-height: calc(1.1em + 0.5vw);
 			color:#efefef;
+		}
+#navigation{
+	width:100vw;
+	height:6vh;
+	background: #efefef;
+
+}
+ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type:none;
+	margin-left:10vw;
+}
+ul li{
+margin:0 1%;
+}
+		ul li a{
+			text-decoration: none;
+			line-height: 6vh;
 		}
 	</style>
 </head>
 <body>
-<div class="container">
+<div id="container-whole" class="container">
+		<div id="navigation">
+				<ul>
+					<li><a href="">Responsive 1</a></li>
+					<li><a href="">Responsive 2</a></li>
+					<li><a href="">Responsive 3</a></li>
+					<li><a href="">Responsive 4</a></li>
+				</ul>
+			</div>
 	<header id="header" class="">
+		
+		
 		
 	</header><!-- /header -->
 	<main class="content">
 		<section class="section1">
 			<title>This is a title</title>
-			<article>
+			<article class="article1">
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+
+
+*{padding:0;
+		margin:0;
+		box-sizing: border-box;
+	}
+
+	html{
+		box-sizing: border-box;
+		font-family: 'Oxygen', sans-serif;
+	}
+		#container-whole{
+			width:100vw;
+			height:100vh;
+			background: #141414;
+			
+		}
+
+			#container-whole #header{
+			width:80vw;
+			height:40vh;
+			background: #efefef;
+			position:relative;
+			left:50%;
+			top:5%;
+			transform: translate(-50%, -5%);
+		}
+		#container-whole .content{
+			width:80vw;
+			height:40vh;
+			background: #234567;
+			position:relative;
+			left:50%;
+			bottom:5%;
+			transform: translate(-50%, -5%);
+			overflow:auto;	
+		}
+		.article1 {
+			
+		}
+		article p{
+			font-size: calc(18px + 0.5vw); 
+			 line-height: calc(1.1em + 0.5vw);
+			color:#efefef;
+		}
+#navigation{
+	width:100vw;
+	height:6vh;
+	background: #efefef;
+	display: flex;
+	flex-direction: row;
+}
+
+#navigation .menu{
+	width:50%;
+}
+ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type:none;
+	margin-left:10vw;
+}
+ul li{
+margin:0 1%;
+}
+		ul li a{
+			text-decoration: none;
+			line-height: 6vh;
+		}

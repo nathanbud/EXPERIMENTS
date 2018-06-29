@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+.main{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width:100vw;
+ height: 100vh;
+}
+        .container{
+            width:40px;
+            height: 40px;
+            border: 1px solid #000;
+            flex-direction: row;
+            display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+        }
+    .box{
+        border: 1px solid #000;
+        width:4px;
+        height: 4px;
+       font-size: 4px;
+        margin: 2px;
+    }
+    
+    .x{top:70px ;
+    position:absolute;}
+
+    .two, .three{
+        top:7px;
+        position:relative;
+    }
+    .ten, .eleven{
+        bottom:7px;
+        position:relative;
+    }
+    .five, .six, .seven, .eight{
+        position: relative;
+        left:50%;
+        transform:translateX(-50%);
+        z-index: -1;
+    }
+      .five{
+        z-index: -2;
+    }
+    .six{
+        z-index: -3;
+    }
+    .seven{
+        z-index: -4;
+    }
+    .eight{
+        z-index: -5;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <a href="#">
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+</a>
+</div>
+
+<div class="main x">
+        <a href="#">
+    <div class="container">
+        <div class="box">A</div>
+        <div class="box two">2</div>
+        <div class="box three">3</div>
+        <div class="box">4</div>
+        <div class="box five">5</div>
+        <div class="box six">6</div>
+        <div class="box seven">7</div>
+        <div class="box eight">8</div>
+        <div class="box">9</div>
+        <div class="box ten">10</div>
+        <div class="box eleven">11</div>
+        <div class="box">12</div>
+    </div>
+</a>
+</div>
+</body>
+</html>

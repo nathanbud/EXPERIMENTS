@@ -16,89 +16,224 @@
  height: 100vh;
 }
         .container{
+            position:relative;
             width:40px;
             height: 40px;
-            border: 1px solid #000;
-            flex-direction: row;
-            display: flex;
-       flex-wrap: wrap;
-       justify-content: space-around;
+            /* border: 1px solid #000; */
+
+        }
+        .containerx{
+            position:relative;
+            width:40px;
+            height: 40px;
+            /* border: 1px solid #000; */
+           
+     
         }
     .box{
         border: 1px solid #000;
-        width:4px;
-        height: 4px;
+        width:3px;
+        height: 3px;
        font-size: 4px;
         margin: 2px;
+        background-color: #000;
     }
     
     .x{top:70px ;
-    position:absolute;}
+    position:absolute;
+    }
+    .xx{top:140px ;
+    position:absolute;
+    }
 
-    .two, .three{
-        top:7px;
-        position:relative;
+      .one{  
+        top:0px;
+        left:0px;
+        position:absolute;
     }
-    .ten, .eleven{
-        bottom:7px;
-        position:relative;
+
+    .two{  
+        top:0px;
+        left:10px;
+        position:absolute;
     }
-    .five, .six, .seven, .eight{
-        position: relative;
-        left:50%;
-        transform:translateX(-50%);
-        z-index: -1;
+    .three{
+        top:0px;
+        left:20px;
+        position:absolute;
     }
-      .five{
-        z-index: -2;
+
+    .four{
+        top:0px;
+        left:30px;
+        position:absolute;
+    }
+    .five{
+        top:10px;
+        left:0px;
+        position:absolute;
     }
     .six{
-        z-index: -3;
+        top:10px;
+        left:10px;
+        position:absolute;
     }
     .seven{
-        z-index: -4;
+        top:10px;
+        left:20px;
+        position:absolute;
     }
     .eight{
-        z-index: -5;
+        top:10px;
+        left:30px;
+        position:absolute;
+    }
+    .nine{
+        top:20px;
+        left:0px;
+        position:absolute;
+    }
+    .ten{
+        top:20px;
+        left:10px;
+        position:absolute;
+    }
+    .eleven{
+        top:20px;
+        left:20px;
+        position:absolute;
+    }
+ 
+      .twelve{
+        top:20px;
+        left:30px;
+        position:absolute;
+    }
+    .thirteen{
+        top:30px;
+        left:0px;
+        position:absolute;
+    }
+    .fourteen{
+        top:30px;
+        left:10px;
+        position:absolute;
+    }
+    .fifteen{
+        top:30px;
+        left:20px;
+        position:absolute;
+    }
+    .sixteen{
+        top:30px;
+        left:30px;
+        position:absolute;
+    }
+    .fullsix{
+        top:8px;
+        left:7px;
+        position:absolute;  
+    }
+    .fullseven{
+        top:8px;
+        left:23px;
+        position:absolute;  
+    }
+    .fullten{
+        top:22px;
+        left:7px;
+        position:absolute;  
+    }
+    .fulleleven{
+        top:22px;
+        left:23px;
+        position:absolute;  
+    }
+    .seventeen{
+        top:15px;
+        left:15px;
+        position:absolute;  
+    }
+    .hide{opacity:0}
+
+   .xx  .one, .xx .six, .xx .eleven, .xx .sixteen, .xx .seventeen {
+        transform: rotate(45deg);
+       
+    } 
+    .xx  .four, .xx .seven, .xx .ten, .xx .thirteen{
+        transform: rotate(45deg);
+     
     }
     </style>
 </head>
 <body>
     <div class="main">
-        <a href="#">
+    <a href="#">
     <div class="container">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
-        <div class="box">7</div>
-        <div class="box">8</div>
-        <div class="box">9</div>
-        <div class="box">10</div>
-        <div class="box">11</div>
-        <div class="box">12</div>
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box four"></div>
+        <div class="box five"></div>
+        <div class="box six"></div>
+        <div class="box seven"></div>
+        <div class="box eight"></div>
+        <div class="box nine"></div>
+        <div class="box ten"></div>
+        <div class="box eleven"></div>
+        <div class="box twelve"></div>
+        <div class="box thirteen"></div>
+        <div class="box fourteen"></div>
+        <div class="box fifteen"></div>
+        <div class="box sixteen"></div>
     </div>
 </a>
 </div>
 
 <div class="main x">
         <a href="#">
-    <div class="container">
-        <div class="box">A</div>
-        <div class="box two">2</div>
-        <div class="box three">3</div>
-        <div class="box">4</div>
-        <div class="box five">5</div>
-        <div class="box six">6</div>
-        <div class="box seven">7</div>
-        <div class="box eight">8</div>
-        <div class="box">9</div>
-        <div class="box ten">10</div>
-        <div class="box eleven">11</div>
-        <div class="box">12</div>
+    <div class="containerx">
+        <div class="box one"></div>
+        <div class="box two hide"></div>
+        <div class="box three hide"></div>
+        <div class="box four"></div>
+        <div class="box five hide"></div>
+        <div class="box six"></div>
+        <div class="box seven"></div>
+        <div class="box eight hide"></div>
+        <div class="box nine hide"></div>
+        <div class="box ten "></div>
+        <div class="box eleven"></div>
+        <div class="box twelve hide"></div>
+        <div class="box thirteen"></div>
+        <div class="box fourteen hide"></div>
+        <div class="box fifteen hide"></div>
+        <div class="box sixteen"></div>
     </div>
+</a>
+</div>
+
+<div class="main xx">
+    <a href="#">
+<div class="containerx">
+    <div class="box one"></div>
+    <div class="box two hide"></div>
+    <div class="box three hide"></div>
+    <div class="box four"></div>
+    <div class="box five hide"></div>
+    <div class="box six fullsix"></div>
+    <div class="box seven fullseven"></div>
+    <div class="box eight hide"></div>
+    <div class="box nine hide"></div>
+    <div class="box ten fullten"></div>
+    <div class="box eleven fulleleven"></div>
+    <div class="box twelve hide"></div>
+    <div class="box thirteen"></div>
+    <div class="box fourteen hide"></div>
+    <div class="box fifteen hide"></div>
+    <div class="box sixteen"></div>
+    <div class="box seventeen"></div>
+</div>
 </a>
 </div>
 </body>
